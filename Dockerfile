@@ -1,4 +1,4 @@
-########### Builder ###########
+########### builder ###########
 FROM golang AS builder
 
 COPY hello-world.go .
