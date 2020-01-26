@@ -6,8 +6,8 @@ COPY hello-world.go .
 RUN go build hello-world.go
 
 ########### hello-world ###########
-FROM busybox  
+FROM busybox
 
 COPY --from=builder /go/hello-world .
 
-CMD ["./hello-world"]  
+CMD ["./hello-world"]
