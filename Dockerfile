@@ -10,4 +10,4 @@ FROM busybox
 
 COPY --from=builder /go/hello-world .
 
-CMD ["./hello-world"]
+CMD ["/hello-world"]
