@@ -9,3 +9,8 @@ Build the docker image locally:
 ```bash
 docker build -t go-hello-world .
 ```
+
+Run the program
+```bash
+docker run --rm  go-hello-world
+```

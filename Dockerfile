@@ -6,7 +6,7 @@ COPY hello-world.go .
 RUN go build hello-world.go
 
 ########### hello-world ###########
-FROM busybox
+FROM scratch
 
 COPY --from=builder /go/hello-world .
 
